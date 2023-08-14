@@ -3,6 +3,10 @@ import { Observable } from 'rxjs';
 /*
   Increment value every 1s, emit even numbers.
 */
+
+// https://www.learnrxjs.io/learn-rxjs/operators/creation/create
+
+// Example 2: Observable that emits even numbers on timer
 const evenNumbers = Observable.create(function (observer) {
   let value = 0;
   const interval = setInterval(() => {
